@@ -1,10 +1,10 @@
-export function Cd({ name, username }) {
+export function Cd({ name, username, avatar }) {
     return (
         <article className="cd-profile">
             <header className="cd-header">
                 <img
                     className="cd-avatar"
-                    alt="avatar" src="https://unavatar.io/readcv/elenatorro" />
+                    alt="avatar" src={avatar} />
             </header>
             <div className='cd-content'>
                 <strong className='cd-nombre'>{name}</strong>
