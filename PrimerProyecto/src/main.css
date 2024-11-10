@@ -1,0 +1,13 @@
+body {
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-family: 'quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.saludo {
+    font-size: 2rem;
+    text-align: center;
+}
