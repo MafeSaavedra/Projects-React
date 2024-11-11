@@ -1,0 +1,19 @@
+.Footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-rows: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border: 1px solid #fff;
+    gap: 5px 5px;
+}
+
+.Ft-content1 {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #fff;
+
+}

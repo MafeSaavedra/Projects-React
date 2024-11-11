@@ -1,18 +1,24 @@
 import './App.css';
+import './main.css';
 
-import { Cd } from './Cd.jsx';
+import { CtMain } from './CtMain.jsx'; // Importa correctamente el componente Main
+import { Navbar } from './Navbar.jsx';
+import { Footer } from './Footer.jsx';
+
 export function App() {
     return (
         <>
-            <div className="cd-React">
-                <Cd name="Natalia" username="natalia09" avatar="https://unavatar.io/readcv/elenatorro" />
+            <div className="Content-pagina">
+                <header>
+                    <Navbar />
+                </header>
+                <main>
+                    <CtMain /> {/* Usa el componente Main correctamente */}
+                </main>
+                <footer>
+                    <Footer />
+                </footer>
             </div>
-            <div className="cd-React">
-                <Cd name="Camila" username="Camis9" avatar="https://unavatar.io/onlyfans/amandaribas" />
-            </div >
-
-
-
         </>
     );
 }
