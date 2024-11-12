@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import "./Navbar.css";
-import logoImage from './img/logohome.svg';
+import logoImage from './img/LOGOREACT.svg';
 
 export function Navbar({ logo = logoImage }) {
     const [estadoInicial, setEstadoInicial] = useState(false);

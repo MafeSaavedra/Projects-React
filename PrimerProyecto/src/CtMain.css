@@ -1,11 +1,10 @@
 .Contenedor-First {
     display: grid;
-    border: 1px solid #fff;
-    margin: 0 auto;
-    grid-template-columns: repeat(auto-fill, minmax(50vh, 1fr));
-    grid-template-rows: repeat(3, 250px);
-    gap: 5px 5px;
-    max-width: 80%;
+    margin: 15px auto;
+    grid-template-columns: repeat(auto-fill, minmax(55vh, 1fr));
+    grid-auto-rows: 250px;
+    gap: 20px 15px;
+    max-width: 90%;
     justify-content: center;
     align-items: center;
     overflow: hidden;
@@ -16,8 +15,12 @@
     margin: 0 auto;
     justify-content: center;
     align-items: center;
-    border: 1px solid #fff;
-    display: block;
+    display: flex;
+    background-color: #282727;
+    border: 1px solid #0000009e;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
 }
 
 .Welcome-page h1 {
@@ -25,4 +28,22 @@
     word-wrap: break-word;
     font-size: 1.5rem;
     margin: 0 auto;
+}
+
+.React-logo {
+    margin-top: 15px;
+    width: 300px;
+    height: auto;
+
+}
+
+.React-logo:hover {
+    filter: drop-shadow(7px 5px 5px #93f4ff);
+    transition: filter 0.3s ease-in-out;
+}
+
+
+.Welcome-page:last-of-type {
+    grid-column: 1 / -1;
+    /* Hace que el último elemento de .Welcome-page ocupe toda la fila */
 }
