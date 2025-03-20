@@ -8,5 +8,7 @@
 - **React**  
 
 ![Bienvenida](./Visuales/LISTO.jpg)
+![To Do List](./Visuales/Visual_2.jpg)
+![Resumen Diario](./Visuales/Visual_3.jpg)
 
 
