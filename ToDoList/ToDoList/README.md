@@ -7,6 +7,6 @@
 - **JavaScript**  
 - **React**  
 
-**Bienvenida : **  (./Visuales/LISTO.jpg")
+![Bienvenida](./Visuales/LISTO.jpg)
 
 
