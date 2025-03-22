@@ -3,12 +3,132 @@
     text-align: center;
 }
 
+.ContenedorFondo {
+    display: flex;
+    background-image: url('../Img/BackG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
 .ContenedorPrincipal {
     display: grid;
-    width: 80%;
+    width: 80vw;
     min-height: 95vh;
     margin: 0px auto;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     overflow: hidden;
+}
+
+.Principal-Letras {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    place-content: center;
+}
+
+.Principal-Letras>:first-child {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 100px;
+    height: 100px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.Principal-Letras>:nth-child(2) {
+    display: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    height: 34px;
+    width: auto;
+    padding: 0;
+    color: #1a1919;
+    font-weight: 100;
+}
+
+.Principal-Letras>:nth-child(3) {
+    display: flex;
+    font-family: 'Nunito', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    height: 65px;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+
+}
+
+.Principal-Letras>:nth-child(4) {
+    display: flex;
+    font-family: 'Montserrat Alternates', sans-serif;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 32px;
+    height: 80px;
+    width: 300px;
+    border: 4px solid #558ac9;
+    border-radius: 48px;
+    padding: 0;
+    color: #1a1919;
+    font-weight: 100;
+    margin-left: 15px;
+    text-align: center;
+
+}
+
+.Principal-Letras>:nth-child(4) h1 {
+    text-align: center;
+    margin-left: 33px;
+}
+
+.CheckLogo {
+    width: 110px;
+    height: auto;
+    margin-top: -25px;
+    vertical-align: middle;
+    animation: zoom 2s infinite ease;
+
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+.PrincipalGif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.PrincipalGif img {
+    object-fit: cover;
+    width: 640px;
 }
