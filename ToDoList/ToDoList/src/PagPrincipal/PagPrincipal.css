@@ -1,0 +1,14 @@
+#root {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ContenedorPrincipal {
+    display: grid;
+    width: 80%;
+    min-height: 95vh;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    overflow: hidden;
+}
