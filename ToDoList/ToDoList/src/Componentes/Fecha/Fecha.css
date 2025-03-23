@@ -1,0 +1,60 @@
+.SectionFecha {
+    display: grid;
+    font-family: 'Monserrat Aternates', sans-serif;
+    border: 4px solid #558ac9;
+    border-radius: 12px;
+    margin: 0 auto;
+    height: 156px;
+    width: 480px;
+}
+
+.SectionFecha div {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    place-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.SectionFecha-Gif {
+    display: grid;
+    height: 100%;
+    grid-column: 1/2;
+    grid-row: 1/3;
+
+}
+
+.FechaGif {
+    width: 130px;
+    object-fit: contain;
+    height: auto;
+}
+
+
+.SectionFecha-Dia {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 700;
+    color: #558ac9;
+    font-size: 65px;
+    margin: 0 auto;
+}
+
+.SectionFecha-Mes {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    color: #82867d;
+    font-size: 35px;
+    margin: 0 auto;
+
+
+}

@@ -1,0 +1,42 @@
+.ContenedorNotas {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Notas-titulo,
+.Notas-entrada {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Notas-titulo {
+    width: 500px;
+    height: 77px;
+    background-color: #b37bc6;
+    font-size: 30px;
+    color: #f0f5f7;
+    border-radius: 50px;
+}
+
+.Notas-titulo h1 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+
+}
+
+.Notas-entrada {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    color: #82867d;
+    width: 500px;
+    height: 500px;
+    border-radius: 40px;
+    border: 4px solid #b37bc6;
+    padding: 40px;
+    box-sizing: border-box;
+    background-color: transparent;
+
+}

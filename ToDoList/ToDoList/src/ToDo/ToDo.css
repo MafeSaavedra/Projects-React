@@ -12,4 +12,17 @@
 .ContToDo-notas {
     display: grid;
     grid-template-rows: 30% 70%;
+    overflow: hidden;
+}
+
+.ConToDo-Fecha,
+.ConToDo-notasimportantes {
+    display: flex;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+}
+
+.ConToDo-notasimportantes {
+    flex-direction: column;
 }

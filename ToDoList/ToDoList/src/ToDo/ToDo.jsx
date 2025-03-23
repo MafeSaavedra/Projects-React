@@ -1,5 +1,8 @@
 import React from 'react';
 import './ToDo.css';
+import { Fecha } from '../Componentes/Fecha/Fecha.jsx';
+import { Notas } from '../Componentes/NotasImport/Notas.jsx';
+
 export function ToDo() {
     return (
         <main className='ContToDo'>
@@ -10,10 +13,13 @@ export function ToDo() {
                 <div></div>
             </section>
             <section className='ContToDo-notas'>
-                <div><h1>Fechas</h1></div>
-                <div><h1>Notas Importantes </h1></div>
+                <div className='ConToDo-Fecha'>
+                    <Fecha />
+                </div>
+                <div className='ConToDo-notasimportantes'>
+                    <Notas />
+                </div>
             </section>
-
         </main>
     );
 }
