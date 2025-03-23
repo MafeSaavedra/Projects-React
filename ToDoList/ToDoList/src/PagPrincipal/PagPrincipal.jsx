@@ -1,8 +1,7 @@
 import React from 'react';
 import './PagPrincipal.css';
-import Gif from '../Img/Pinguino.gif';
-import Check from '../Img/Check-logo.png';
-
+import Gif from '../assets/Img/Pinguino.gif';
+import Check from '../assets/Img/Check-logo.png';
 
 export function PagPrincipal() {
     return (

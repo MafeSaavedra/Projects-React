@@ -1,0 +1,15 @@
+.ContToDo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90vh 10vh;
+}
+
+.ContToDo-list,
+.ContToDo-notas {
+    border: 1px solid black;
+}
+
+.ContToDo-notas {
+    display: grid;
+    grid-template-rows: 30% 70%;
+}

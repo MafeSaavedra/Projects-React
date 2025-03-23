@@ -1,0 +1,10 @@
+.Contenedor-Navbar {
+    position: fixed;
+    bottom: 250px;
+    right: 80px;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    z-index: 1000;
+}
