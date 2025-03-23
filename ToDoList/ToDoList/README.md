@@ -9,10 +9,11 @@
 
 ![Bienvenida](./Visuales/LISTO.jpg)
 ![To Do List](./Visuales/Visual_2.jpg)
+![To Do List](./Visuales/Visual_2.1.jpg)
 ![Resumen Diario](./Visuales/Visual_3.jpg)
 
 
-##Paleta de Colores
+## Paleta de Colores
 - **Azul Claro : #558ac9**
 - **Blanco Hielo  : #f0f5f7**
 - **Lila : #b37bc6**

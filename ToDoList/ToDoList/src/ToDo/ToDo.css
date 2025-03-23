@@ -1,7 +1,7 @@
 .ContToDo {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90vh 10vh;
+    grid-template-rows: 100vh;
 }
 
 .ContToDo-list,
