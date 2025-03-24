@@ -1,12 +1,15 @@
 .ContToDo {
+    background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 100vh;
 }
 
-.ContToDo-list,
-.ContToDo-notas {
-    border: 1px solid black;
+.Botones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 .ContToDo-notas {
@@ -18,7 +21,6 @@
 .ConToDo-Fecha,
 .ConToDo-notasimportantes {
     display: flex;
-    border: 1px solid black;
     justify-content: center;
     align-items: center;
 }

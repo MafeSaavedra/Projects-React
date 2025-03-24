@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import "./Notas.css";
 
 export function Notas() {
-    // Estado para manejar el contenido del textarea
     const [texto, setTexto] = useState(() => {
         return localStorage.getItem("texto") || "Escribe Aquí..";
     });

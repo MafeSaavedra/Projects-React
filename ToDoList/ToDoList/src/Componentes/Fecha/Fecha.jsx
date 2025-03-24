@@ -7,7 +7,7 @@ export function Fecha() {
     const [dia, setDia] = useState(() => localStorage.getItem("dia") || "Día");
     const [mes, setMes] = useState(() => localStorage.getItem("mes") || "Mes");
 
-    // GUARDAR Y RENDERIZAR LOS CAMBIOS 
+    // GUARDAR Y RENDERIZAR LOS CAMBIOS : Cada vez que dia/mes cambia, guarda su nuevo valor en localStorage
     useEffect(() => {
         localStorage.setItem("dia", dia);
     }, [dia]);

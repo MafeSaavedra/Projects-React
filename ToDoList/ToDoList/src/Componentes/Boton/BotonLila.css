@@ -1,0 +1,23 @@
+.divBoton-Lila {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Boton-Lila {
+    font-family: 'Montserrat Alternates' 'sans-serif';
+    background-color: #b37bc6;
+    padding: 15px 50px;
+    color: white;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: none;
+
+}
+
+.Boton-Lila:hover {
+    background-color: #558ac9;
+
+}
