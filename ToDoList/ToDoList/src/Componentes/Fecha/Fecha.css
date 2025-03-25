@@ -35,6 +35,8 @@
 
 .SectionFecha-Dia {
     display: grid;
+    border: none;
+    outline: none;
     grid-column: 2/3;
     grid-row: 1/2;
     width: 100%;
@@ -45,8 +47,11 @@
     margin: 0 auto;
 }
 
+
 .SectionFecha-Mes {
     display: grid;
+    border: none;
+    outline: none;
     grid-column: 2/3;
     grid-row: 2/3;
     width: 100%;

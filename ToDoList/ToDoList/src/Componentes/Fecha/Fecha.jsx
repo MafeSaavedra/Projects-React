@@ -37,7 +37,10 @@ export function Fecha() {
                 contentEditable suppressContentEditableWarning
                 onBlur={(e) => ManejarCambios(e, setMes, "Enero")}
                 onKeyDown={(e) => e.key === "Enter" && e.target.blur()}
-            >{mes}</div>
+            >{mes}
+
+
+            </div>
         </section>
     );
 }
