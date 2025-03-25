@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import './Tarea.css';
 
 export function Tarea() {
@@ -42,6 +44,9 @@ export function Tarea() {
                     className="TareaInput"
                 />
             </div>
+            <button className="BotonCerrar">
+                <FontAwesomeIcon icon={faTimesCircle} size="4x" />
+            </button>
         </section>
     );
 }

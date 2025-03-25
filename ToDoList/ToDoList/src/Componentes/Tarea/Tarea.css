@@ -75,3 +75,18 @@
     /* Elimina el estilo en navegadores modernos */
 
 }
+
+.BotonCerrar {
+    background-color: white;
+    border: none;
+    position: absolute;
+    left: 730px;
+    top: 70px;
+    color: #b37bc6;
+
+}
+
+.BotonCerrar:hover {
+    color: #558ac9;
+
+}

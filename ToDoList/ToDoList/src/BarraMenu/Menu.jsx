@@ -13,9 +13,10 @@ export function Menu() {
     return (
         <section className='Contenedor-Navbar'>
             {/* Se activara en color violeta cuando este en PagPrincipal*/}
-            <Link to="/"><div>
-                <FontAwesomeIcon icon={faCircle} size="2x" color={getColor("/")} title="Inicio" />
-            </div>
+            <Link to="/">
+                <div>
+                    <FontAwesomeIcon icon={faCircle} size="2x" color={getColor("/")} title="Inicio" />
+                </div>
             </Link>
 
             <Link to="/ToDo">
