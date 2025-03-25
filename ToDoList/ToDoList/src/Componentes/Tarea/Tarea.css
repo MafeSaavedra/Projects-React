@@ -1,0 +1,77 @@
+.sectionTarea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 600px;
+    overflow: hidden;
+    height: 120px;
+    background-color: transparent;
+    border: 4px solid #558ac9;
+    border-radius: 14px;
+
+}
+
+.TareaTime {
+    justify-content: center;
+    align-items: center;
+}
+
+.TareaCheck input[type="checkbox"] {
+    width: 60px;
+    height: 60px;
+    appearance: none;
+    /* Oculta el checkbox por defecto */
+    -webkit-appearance: none;
+    border: 4px solid #558ac9;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Cuando el check box se active*/
+.TareaCheck input[type="checkbox"]:checked {
+    background-color: transparent;
+    background-image: url("../../assets/Img/Check-logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+
+}
+
+
+.TareaInput {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 30px;
+    width: 300px;
+    border: none;
+    color: #82867d;
+    outline: none;
+}
+
+.TareaTime-Hora {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 30px;
+    color: #82867d;
+    width: 100px;
+    border: none;
+    outline: none;
+}
+
+.TareaTime-Periodo {
+    font-family: 'Nunito', 'sans-serif';
+    font-size: 30px;
+    width: 80px;
+    color: #82867d;
+    background-color: transparent;
+    border: none;
+    /* Elimina el borde */
+    outline: none;
+    /* Elimina el borde al hacer clic */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* Elimina el estilo en navegadores modernos */
+
+}

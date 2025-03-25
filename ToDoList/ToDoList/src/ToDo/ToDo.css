@@ -5,11 +5,28 @@
     grid-template-rows: 100vh;
 }
 
+.ContToDo-list {
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .Botones {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 50px;
+}
+
+.ToDoCuadro-Tarea,
+.TareaInputDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .ContToDo-notas {
