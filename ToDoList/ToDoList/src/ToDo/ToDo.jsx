@@ -22,11 +22,19 @@ export function ToDo() {
         }, []); // El segundo argumento vacío [] indica que este efecto solo se ejecuta una vez al montar el componente
     */
 
+    /* FUNCIÓN PARA AGREGAR NUEVAS TAREAS */
+    const [tareas, setTareas] = useState([]);
+
+    const agregarTarea = () => {
+        const nuevaTarea = { id: Math.floor(Math.random() * 1000) };
+        setTareas([...tareas, nuevaTarea]);
+    };
+
     return (
         <main className='ContToDo'>
             <section className='ContToDo-list'>
                 <div className='Botones'>
-                    <Boton children="Crear Nueva Tarea" />
+                    <Boton children="Crear Nueva Tarea" onClick={agregarTarea} />
                     <Boton children="Seleccionar Todo" />
                     <BotonConfig />
                 </div>
