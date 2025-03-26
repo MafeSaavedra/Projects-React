@@ -9,15 +9,16 @@ export function Tarea({ id, remove }) {
     const [input, setInput] = useState("Nueva Tarea");
     const [check, setCheck] = useState(false);
 
+    console.log("Renderizando tarea con ID:", id); // Verificar que el ID es válido
+
     return (
         <section className="sectionTarea">
             <div className="TareaCheck">
-                <input type="checkbox"
+                <input
+                    type="checkbox"
                     checked={check}
-                    onChange={(e) => {
-                        console.log("Checkbox cambiado:", e.target.checked);
-                        setCheck(e.target.checked);
-                    }} />
+                    onChange={(e) => setCheck(e.target.checked)}
+                />
             </div>
 
             <div className="TareaTime">
@@ -25,7 +26,6 @@ export function Tarea({ id, remove }) {
                     className="TareaTime-Hora"
                     type="text"
                     value={hora}
-                    /* Setea el estado, cuando ocurre un cambio Onchange */
                     onChange={(e) => setHora(e.target.value)}
                     pattern="(0[1-9]|1[0-2]):[0-5][0-9]"
                 />
@@ -44,9 +44,11 @@ export function Tarea({ id, remove }) {
                     className="TareaInput"
                 />
             </div>
+
             <button className="BotonCerrar" onClick={() => remove(id)}>
                 <FontAwesomeIcon icon={faTimesCircle} size="4x" />
             </button>
         </section>
+
     );
 }

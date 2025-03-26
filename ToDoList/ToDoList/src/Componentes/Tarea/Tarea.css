@@ -4,11 +4,13 @@
     align-items: center;
     gap: 15px;
     width: 600px;
-    overflow: hidden;
+    overflow: visible;
     height: 120px;
     background-color: transparent;
     border: 4px solid #558ac9;
     border-radius: 14px;
+    position: relative;
+
 
 }
 
@@ -80,8 +82,8 @@
     background-color: white;
     border: none;
     position: absolute;
-    left: 730px;
-    top: 70px;
+    left: 570px;
+    top: -12px;
     color: #b37bc6;
 
 }

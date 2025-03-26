@@ -29,6 +29,11 @@
 
 }
 
+.ToDoCuadro-Tarea {
+    flex-direction: column;
+    gap: 25px;
+}
+
 .ContToDo-notas {
     display: grid;
     grid-template-rows: 30% 70%;
