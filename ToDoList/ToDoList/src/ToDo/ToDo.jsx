@@ -28,7 +28,10 @@ export function ToDo() {
     const agregarTarea = () => {
         const nuevaTarea = { id: Math.floor(Math.random() * 1000) };
         setTareas([...tareas, nuevaTarea]);
+        /* El spread operator [...] en este caso hace una copia independiente y agg una new task"*/
     };
+
+
 
     return (
         <main className='ContToDo'>
@@ -39,8 +42,10 @@ export function ToDo() {
                     <BotonConfig />
                 </div>
                 <div className='ToDoCuadro-Tarea'>
-                    <Tarea />
+                    {/* Aquí recorremos el array de tareas y generamos un nuevo componente por cada elemento */}
+                    {tareas.map(((tarea) => (<Tarea key={tarea.id} />)))}
                 </div>
+
 
             </section>
             <section className='ContToDo-notas'>
