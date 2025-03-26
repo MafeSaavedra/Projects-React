@@ -1,9 +1,10 @@
 import React from "react";
 import './BotonLila.css';
-export function Boton({ children, OnClick }) {
+
+export function Boton({ children, onClick }) {
     return (
         <div className="divBoton-Lila">
-            <button OnClick={OnClick} className="Boton-Lila">{children}</button>
+            <button onClick={onClick} className="Boton-Lila">{children}</button>
         </div>
     );
 }

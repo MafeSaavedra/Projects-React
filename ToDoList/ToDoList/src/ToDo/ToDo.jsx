@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+
 import axios from 'axios';
 import './ToDo.css';
 import { Fecha } from '../Componentes/Fecha/Fecha.jsx';
@@ -29,7 +30,17 @@ export function ToDo() {
         const nuevaTarea = { id: Math.floor(Math.random() * 1000) };
         setTareas([...tareas, nuevaTarea]);
         /* El spread operator [...] en este caso hace una copia independiente y agg una new task"*/
+        console.log("Tarea Creada ", nuevaTarea);
     };
+
+    const eliminarTarea = (id) => {
+        setTareas((prevTareas) => {
+            const nuevasTareas = prevTareas.filter((tarea) => tarea.id !== id);
+            console.log("Tarea eliminada, ID:", id);
+            return nuevasTareas;
+        });
+    };
+    /* Usa filter() para crear una nueva lista SIN esa tarea que coincide con el Id*/
 
 
 
@@ -37,13 +48,11 @@ export function ToDo() {
         <main className='ContToDo'>
             <section className='ContToDo-list'>
                 <div className='Botones'>
-                    <Boton children="Crear Nueva Tarea" onClick={agregarTarea} />
-                    <Boton children="Seleccionar Todo" />
-                    <BotonConfig />
+                    <Boton children="Crear Nueva Tarea" onClick={agregarTarea} />                    <BotonConfig />
                 </div>
                 <div className='ToDoCuadro-Tarea'>
                     {/* Aquí recorremos el array de tareas y generamos un nuevo componente por cada elemento */}
-                    {tareas.map(((tarea) => (<Tarea key={tarea.id} />)))}
+                    {tareas.map(((tarea) => (<Tarea key={tarea.id} id={tarea.id} remove={eliminarTarea} />)))}
                 </div>
 
 

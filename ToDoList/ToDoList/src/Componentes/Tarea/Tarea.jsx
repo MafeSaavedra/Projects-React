@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTimesCircle } from "@fortawesome/free-solid-svg-icons";
 import './Tarea.css';
 
-export function Tarea() {
+export function Tarea({ id, remove }) {
     const [hora, setHora] = useState("00:00");
     const [periodo, setPeriodo] = useState("AM");
     const [input, setInput] = useState("Nueva Tarea");
@@ -44,7 +44,7 @@ export function Tarea() {
                     className="TareaInput"
                 />
             </div>
-            <button className="BotonCerrar">
+            <button className="BotonCerrar" onClick={() => remove(id)}>
                 <FontAwesomeIcon icon={faTimesCircle} size="4x" />
             </button>
         </section>
