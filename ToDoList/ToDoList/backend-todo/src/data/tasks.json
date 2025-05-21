@@ -1,0 +1,30 @@
+[
+  {
+    "id": "tarea2",
+    "texto": "Desayuno",
+    "completado": true,
+    "hora": "06:00",
+    "periodo": "AM"
+  },
+  {
+    "id": "1",
+    "texto": "Reunión de trabajo",
+    "completado": true,
+    "hora": "11:00",
+    "periodo": "AM"
+  },
+  {
+    "id": "7196a28d-48c4-4051-9297-1036749a6ad2",
+    "texto": "Revision de issues",
+    "hora": "1:00",
+    "periodo": "PM",
+    "completado": true
+  },
+  {
+    "id": "0e84fe1f-07e3-4415-8c17-3afe50c543af",
+    "texto": "Nueva Tarea",
+    "hora": "00:00",
+    "periodo": "AM",
+    "completado": false
+  }
+]
