@@ -9,5 +9,7 @@ Colección de proyectos usando React de todos los niveles. Desde lo básico hast
 ✔️ Agregar tareas  
 ✔️ Marcar tareas como completadas  
 ✔️ Eliminar tareas  
-✔️ Diseño minimalista con Tailwind 
+
+![Vista Proyecto 2](./Screenshoots/Segundo-Proyecto.jpg)
+
 
